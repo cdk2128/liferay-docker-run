@@ -3,7 +3,7 @@ services:
     db:
         image: mysql:5.7
         ports:
-            - 3306:3306
+            - 3306
         environment:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: lportal
@@ -21,6 +21,10 @@ services:
             - XMX=1024
             - XMS=1024
         expose:
+            - 8080
+            - 8000
+            - 11311
+        ports:
             - 8080
             - 8000
             - 11311
