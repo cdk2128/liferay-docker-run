@@ -20,10 +20,6 @@ services:
             - DB_PORT=3306
             - XMX=1024
             - XMS=1024
-        expose:
-            - 8080
-            - 8000
-            - 11311
         ports:
             - 8080
             - 8000
