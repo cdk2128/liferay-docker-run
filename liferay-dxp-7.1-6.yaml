@@ -10,7 +10,7 @@ services:
             MYSQL_USER: lr_user
             MYSQL_PASSWORD: liferay
         volumes:
-            - /opt/portainer/liferay/sql/:/docker-entrypoint-initdb.d/
+            - ./sql:/docker-entrypoint-initdb.d/
             - mysql-dev-data:/var/lib/mysql
 
     liferay:
